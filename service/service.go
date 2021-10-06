@@ -35,10 +35,11 @@ func (s Service) GetMovieById(id string) (entities.Movie, error) {
 	return movie, nil
 }
 
-func (s Service) DeleteMovieById(id string) (entities.Movie, error) {
-	movie, err := s.Repo.DeleteMovieById(id)
+func (s Service) DeleteMovieById(id string) error {
+
+	err := s.Repo.DeleteMovieById(id)
 	if err != nil {
-		return movie, err
+		return err
 	}
-	return movie, nil
+	return nil
 }

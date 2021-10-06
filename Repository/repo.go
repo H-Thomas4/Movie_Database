@@ -72,3 +72,32 @@ func (r Repo) GetMovieById(id string) (entities.Movie, error) {
 	}
 	return compare, nil
 }
+
+func (r *Repo) DeleteMovieById(id string) error {
+	db := MvDb{}
+	file, err := ioutil.ReadFile(r.Filename)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	err = json.Unmarshal(file, &db)
+	if err != nil {
+		return err
+	}
+
+	for i, v := range db.Movies {
+		if v.Id == id {
+			db.Movies = append(db.Movies[:i], db.Movies[i+1:]...)
+			Marshaled, err := json.MarshalIndent(&db, "", " ")
+			if err != nil {
+				return err
+			}
+			_ = ioutil.WriteFile(r.Filename, Marshaled, 0644)
+			return nil
+		}
+	}
+
+	return nil
+}
+
+//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

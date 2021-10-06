@@ -56,17 +56,11 @@ func (mov MovieHandler) DeleteMovieById(w http.ResponseWriter, r *http.Request) 
 	vars := mux.Vars(r)
 	id := vars["Id"]
 
-	movById, err := mov.Serv.DeleteMovieById(id)
+	err := mov.Serv.DeleteMovieById(id)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusNotFound)
 	}
 
-	movie, err := json.MarshalIndent(movById, "", "	")
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
-	}
-
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	_, _ = w.Write(movie)
 }

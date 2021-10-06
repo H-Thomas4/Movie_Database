@@ -1,101 +1,87 @@
 {
   "Movies": [
     {
-      "Id": "af92cdbd-9757-4dee-8418-b04e005331f4",
-      "Title": "Fight Club",
-      "Genre": [
-        "Thriller",
-        "Drama"
-      ],
-      "Description": " ",
-      "Director": "David Fincher",
-      "Actors": [
-        "Brad Pitt",
-        "Edward Norton",
-        "Helena Bonham Carter"
-      ],
-      "Ratings": 4.4
+     "Id": "92c1f9d5-5767-4261-90b9-0966422dde40",
+     "Title": "Four Brothers",
+     "Genre": [
+      "Drama",
+      "Action",
+      "Crime"
+     ],
+     "Description": "When their adoptive mother is gunned down in a store robbery the 'four brothers' investigate the murder for themselves \u0026 look for the killers, but not all is what it seems.",
+     "Director": "John Singleton",
+     "Actors": [
+      "Mark Wahlberg",
+      "Tyrese Gibson",
+      "Andre 3000"
+     ],
+     "Ratings": 6.8
     },
-    {
-      "Id": "1197655b-d52c-419f-8395-a88c77698b7a",
-      "Title": "The Pursuit of Happyness",
-      "Genre": [
-        "Biography",
-        "Drama"
-      ],
-      "Description": " ",
-      "Director": "Gabriele Muccino",
-      "Actors": [
-        "Will Smith",
-        "Jaden Smith",
-        "Thandiwe Newton"
-      ],
-      "Ratings": 8
-    },
-    {
-      "Id": "f03f6e9f-cad0-4ea3-9f52-761d314f8ef1",
-      "Title": "Romeo + Juliet",
-      "Genre": [
-        "Drama",
-        "Romance"
-      ],
-      "Description": " ",
-      "Director": "Baz Luhrmann",
-      "Actors": [
-        "Leonardo DiCaprio",
-        "Claire Danes",
-        "John Leguizamo"
-      ],
-      "Ratings": 6.7
-    },
-    {
-      "Id": "c5007247-ae95-4dbb-9dc6-aee852ab864b",
-      "Title": "Safe House",
-      "Genre": [
-        "Action",
-        "Thriller"
-      ],
-      "Description": " ",
-      "Director": "Daniel Espinosa",
-      "Actors": [
-        "Denzel Washington",
-        "Ryan Reynolds",
-        "Robert Patrick"
-      ],
-      "Ratings": 6.7
-    },
-    {
-      "Id": "5172bfa8-d10e-4958-898a-93a67ef5f3e9",
-      "Title": "The Avengers",
-      "Genre": [
-        "Action",
-        "Adventure",
-        "Sci-fi"
-      ],
-      "Description": " ",
-      "Director": "Joss Wheldon",
-      "Actors": [
-        "Robert Downey Jr",
-        "Chris Evans",
-        "Scarlett Johansson"
-      ],
-      "Ratings": 8
-    },
-    {
-      "Id": "94b4e8fe-a366-466b-8d18-9aef74cfe4b0",
-      "Title": "Erin Brockovich",
-      "Genre": [
-        "Biography",
-        "Drama"
-      ],
-      "Description": "",
-      "Director": "Steven Soderbergh",
-      "Actors": [
-        "Julia Roberts",
-        "Albert Finney",
-        " David Brisbin"
-      ],
-      "Ratings": 7.4
-    }
+   {
+    "Id": "8f5f6720-647f-4314-945d-50eb797c72b9",
+    "Title": "The Mitchells vs the Machines",
+    "Genre": [
+     "Animation",
+     "Adventure",
+     "Comedy"
+    ],
+    "Description": "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse and suddenly become humanity's unlikeliest last hope.",
+    "Director": "Michael Rianda",
+    "Actors": [
+     "Abbi Jacobson",
+     "Danny McBride",
+     "Maya Rudolph"
+    ],
+    "Ratings": 7.7
+   },
+   {
+    "Id": "838cac6b-a28a-4d9b-a497-ab20229a9be8",
+    "Title": "Secondhand Lions",
+    "Genre": [
+     "Drama",
+     "Comedy",
+     "Family"
+    ],
+    "Description": "A coming-of-age story about a shy, young boy sent by his irresponsible mother to spend the summer with his wealthy, eccentric uncles in Texas.",
+    "Director": "Tim McCanlies",
+    "Actors": [
+     "Haley Joel Osment",
+     "Michael Caine",
+     "Robert DuVall"
+    ],
+    "Ratings": 7.5
+   },
+   {
+    "Id": "51fda750-37ba-41d3-a473-41058370a465",
+    "Title": "August Rush",
+    "Genre": [
+     "Drama",
+     "Music"
+    ],
+    "Description": "An orphaned musical prodigy uses his gift to try to find his birth parents.",
+    "Director": "Kirsten Sheridan",
+    "Actors": [
+     "Freddie Highmore",
+     "Jonathan Rhys Meyers",
+     "Keri Russell"
+    ],
+    "Ratings": 7.5
+   },
+   {
+    "Id": "d1a101fc-afea-47ed-909c-834c533f2b2d",
+    "Title": "The Pursuit of Happyness",
+    "Genre": [
+     "Drama",
+     "Biography"
+    ],
+    "Description": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.",
+    "Director": "Gabriele Muccino",
+    "Actors": [
+     "Will Smith",
+     "Jaden Smith",
+     "Thandiwe Newton"
+    ],
+    "Ratings": 8
+   }
   ]
 }
