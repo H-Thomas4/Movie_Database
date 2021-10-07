@@ -64,3 +64,7 @@ func (mov MovieHandler) DeleteMovieById(w http.ResponseWriter, r *http.Request) 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 }
+
+//func (mov MovieHandler) UpdateMovieDb(w http.ResponseWriter, r *http.Request) {
+//
+//}

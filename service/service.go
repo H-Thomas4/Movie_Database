@@ -43,3 +43,7 @@ func (s Service) DeleteMovieById(id string) error {
 	}
 	return nil
 }
+
+//func (s Service) UpdateMovieDb(mv entities.Movie) error{
+//
+//}
