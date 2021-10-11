@@ -44,6 +44,10 @@ func (s Service) DeleteMovieById(id string) error {
 	return nil
 }
 
-//func (s Service) UpdateMovieDb(mv entities.Movie) error{
-//
-//}
+func (s Service) UpdateMovieById(id string, mv entities.Movie) error {
+	err := s.Repo.UpdateMovieDb(id, mv)
+	if err != nil {
+		return err
+	}
+	return nil
+}

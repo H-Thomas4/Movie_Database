@@ -63,8 +63,24 @@ func (mov MovieHandler) DeleteMovieById(w http.ResponseWriter, r *http.Request) 
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
+
 }
 
-//func (mov MovieHandler) UpdateMovieDb(w http.ResponseWriter, r *http.Request) {
-//
-//}
+func (mov MovieHandler) UpdateMovie(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	id := vars["Id"]
+	mv := entities.Movie{}
+
+	err := json.NewDecoder(r.Body).Decode(&mv)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	err = mov.Serv.UpdateMovieById(id, mv)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+	}
+
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
+}

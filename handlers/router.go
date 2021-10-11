@@ -10,6 +10,7 @@ func NewServer(handler MovieHandler) *mux.Router {
 	r.HandleFunc("/movie", handler.PostNewMovie).Methods("POST")
 	r.HandleFunc("/movie/{Id}", handler.GetById).Methods("GET")
 	r.HandleFunc("/movie/{Id}", handler.DeleteMovieById).Methods("DELETE")
+	r.HandleFunc("/movie/{Id}", handler.UpdateMovie).Methods("PUT")
 
 	return r
 }

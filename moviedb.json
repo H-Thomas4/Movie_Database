@@ -1,87 +1,69 @@
-{
-  "Movies": [
-    {
-     "Id": "92c1f9d5-5767-4261-90b9-0966422dde40",
-     "Title": "Four Brothers",
-     "Genre": [
+[
+  {
+    "Id": "92c1f9d5-5767-4261-90b9-0966422dde40",
+    "Title": "Four Brothers",
+    "Genre": [
       "Drama",
       "Action",
       "Crime"
-     ],
-     "Description": "When their adoptive mother is gunned down in a store robbery the 'four brothers' investigate the murder for themselves \u0026 look for the killers, but not all is what it seems.",
-     "Director": "John Singleton",
-     "Actors": [
+    ],
+    "Description": "When their adoptive mother is gunned down in a store robbery the 'four brothers' investigate the murder for themselves \u0026 look for the killers, but not all is what it seems.",
+    "Director": "John Singleton",
+    "Actors": [
       "Mark Wahlberg",
       "Tyrese Gibson",
       "Andre 3000"
-     ],
-     "Ratings": 6.8
-    },
-   {
+    ],
+    "Ratings": 6.8
+  },
+  {
     "Id": "8f5f6720-647f-4314-945d-50eb797c72b9",
     "Title": "The Mitchells vs the Machines",
     "Genre": [
-     "Animation",
-     "Adventure",
-     "Comedy"
+      "Animation",
+      "Adventure",
+      "Comedy"
     ],
     "Description": "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse and suddenly become humanity's unlikeliest last hope.",
     "Director": "Michael Rianda",
     "Actors": [
-     "Abbi Jacobson",
-     "Danny McBride",
-     "Maya Rudolph"
+      "Abbi Jacobson",
+      "Danny McBride",
+      "Maya Rudolph"
     ],
     "Ratings": 7.7
-   },
-   {
-    "Id": "838cac6b-a28a-4d9b-a497-ab20229a9be8",
-    "Title": "Secondhand Lions",
-    "Genre": [
-     "Drama",
-     "Comedy",
-     "Family"
-    ],
-    "Description": "A coming-of-age story about a shy, young boy sent by his irresponsible mother to spend the summer with his wealthy, eccentric uncles in Texas.",
-    "Director": "Tim McCanlies",
-    "Actors": [
-     "Haley Joel Osment",
-     "Michael Caine",
-     "Robert DuVall"
-    ],
-    "Ratings": 7.5
-   },
-   {
-    "Id": "51fda750-37ba-41d3-a473-41058370a465",
-    "Title": "August Rush",
-    "Genre": [
-     "Drama",
-     "Music"
-    ],
-    "Description": "An orphaned musical prodigy uses his gift to try to find his birth parents.",
-    "Director": "Kirsten Sheridan",
-    "Actors": [
-     "Freddie Highmore",
-     "Jonathan Rhys Meyers",
-     "Keri Russell"
-    ],
-    "Ratings": 7.5
-   },
-   {
+  },
+  {
     "Id": "d1a101fc-afea-47ed-909c-834c533f2b2d",
     "Title": "The Pursuit of Happyness",
     "Genre": [
-     "Drama",
-     "Biography"
+      "Drama",
+      "Biography"
     ],
     "Description": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.",
     "Director": "Gabriele Muccino",
     "Actors": [
-     "Will Smith",
-     "Jaden Smith",
-     "Thandiwe Newton"
+      "Will Smith",
+      "Jaden Smith",
+      "Thandiwe Newton"
     ],
     "Ratings": 8
-   }
-  ]
-}
+  },
+  {
+    "Id": "",
+    "Title": "Ever After",
+    "Genre": [
+      "removed Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "Description": "this is an update.",
+    "Director": "Andy ",
+    "Actors": [
+      "Drew Barrymore",
+      " Anjelica Huston",
+      "Dougray Scott"
+    ],
+    "Ratings": 7
+  }
+]

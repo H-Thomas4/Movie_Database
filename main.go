@@ -23,6 +23,11 @@ func main() {
 	handler := handlers.NewMovieHandler(serv)
 	router := handlers.NewServer(handler)
 
+	//repository2 := Repository.NewRepo(fileName)
+	//serv2 := service.DoService(repository2)
+	//handler2 := handlers.NewMovieHandler(serv2)
+	//router2 := handlers.NewServer(handler2)
+
 	server := &http.Server{
 		Handler: router,
 		Addr:    "127.0.0.1:8080",
