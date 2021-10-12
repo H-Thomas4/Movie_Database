@@ -1,23 +1,24 @@
 [
   {
-    "Id": "92c1f9d5-5767-4261-90b9-0966422dde40",
+    "Id": "c560c7b4-d5f7-4ff2-b6d5-cc55ea819115",
     "Title": "Four Brothers",
     "Genre": [
       "Drama",
       "Action",
       "Crime"
     ],
-    "Description": "When their adoptive mother is gunned down in a store robbery the 'four brothers' investigate the murder for themselves \u0026 look for the killers, but not all is what it seems.",
+    "Description": "When their adoptive mother is gunned down in a store robbery the 'four brothers' investigate the murder for themselves  look for the killers, but not all is what it seems.",
     "Director": "John Singleton",
     "Actors": [
-      "Mark Wahlberg",
+      "Marc Walhberg",
       "Tyrese Gibson",
+      "Terrance Howard",
       "Andre 3000"
     ],
     "Ratings": 6.8
   },
   {
-    "Id": "8f5f6720-647f-4314-945d-50eb797c72b9",
+    "Id": "f485c494-4d65-4fe6-918a-48a89461da54",
     "Title": "The Mitchells vs the Machines",
     "Genre": [
       "Animation",
@@ -34,36 +35,31 @@
     "Ratings": 7.7
   },
   {
-    "Id": "d1a101fc-afea-47ed-909c-834c533f2b2d",
-    "Title": "The Pursuit of Happyness",
+    "Id": "",
+    "Title": "",
     "Genre": [
-      "Drama",
-      "Biography"
+      "family"
     ],
-    "Description": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.",
-    "Director": "Gabriele Muccino",
+    "Description": "A inspiring story about a father's struggle to provide his son and himself a better life.",
+    "Director": "",
     "Actors": [
-      "Will Smith",
-      "Jaden Smith",
-      "Thandiwe Newton"
+      ""
     ],
-    "Ratings": 8
+    "Ratings": 8.8
   },
   {
-    "Id": "",
-    "Title": "Ever After",
+    "Id": "b21681c1-23d1-4bf4-8d71-d1fcf9f9d693",
+    "Title": "Fight Club",
     "Genre": [
-      "removed Comedy",
-      "Drama",
-      "Romance"
+      "Drama"
     ],
-    "Description": "this is an update.",
-    "Director": "Andy ",
+    "Description": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+    "Director": "David Fincher",
     "Actors": [
-      "Drew Barrymore",
-      " Anjelica Huston",
-      "Dougray Scott"
+      "Brad Pitt",
+      "Edward Norton",
+      "Helena Bonham Carter"
     ],
-    "Ratings": 7
+    "Ratings": 8.8
   }
 ]

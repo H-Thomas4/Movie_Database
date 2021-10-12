@@ -3,8 +3,8 @@ package service
 import (
 	"Movie_Database/Repository"
 	"Movie_Database/entities"
-
 	"github.com/google/uuid"
+	"net/http"
 )
 
 type Service struct {
@@ -45,6 +45,9 @@ func (s Service) DeleteMovieById(id string) error {
 }
 
 func (s Service) UpdateMovieById(id string, mv entities.Movie) error {
+	if id != mv.Id {
+		return http.ErrMissingFile
+	}
 	err := s.Repo.UpdateMovieDb(id, mv)
 	if err != nil {
 		return err

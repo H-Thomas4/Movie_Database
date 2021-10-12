@@ -64,15 +64,13 @@ func (r Repo) GetMovieById(id string) (entities.Movie, error) {
 	for _, val := range movies.Movies { // iterates through the slice of movies and the struct setup
 		if val.Id == id { // compares the id entered in postman to the movie db id stored.
 			compare = val
-			return compare, nil // returns the movie found by id or error if not found
-
 		}
 
 	}
 	return compare, nil
 }
 
-func (r *Repo) DeleteMovieById(id string) error {
+func (r Repo) DeleteMovieById(id string) error {
 	db := MvDb{}                             // instance of slice of Movies
 	file, err := ioutil.ReadFile(r.Filename) // reads moviedb.json file
 	if err != nil {
@@ -104,7 +102,7 @@ func (r *Repo) DeleteMovieById(id string) error {
 
 }
 
-func (r *Repo) UpdateMovieDb(id string, mv entities.Movie) error {
+func (r Repo) UpdateMovieDb(id string, mv entities.Movie) error {
 
 	file, err := ioutil.ReadFile(r.Filename) // reads moviedb.json file
 	if err != nil {
@@ -129,7 +127,7 @@ func (r *Repo) UpdateMovieDb(id string, mv entities.Movie) error {
 		return err
 	}
 
-	err = ioutil.WriteFile(r.Filename, mvBytes, 0644) // writes the change bak to the db file.
+	err = ioutil.WriteFile(r.Filename, mvBytes, 0644) // writes the change back to the db file.
 	if err != nil {
 		return err
 	}
