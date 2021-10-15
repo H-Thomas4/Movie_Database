@@ -1,23 +1,31 @@
 package service
 
 import (
-	"Movie_Database/Repository"
+	//"Movie_Database/Repository"
+	//"Movie_Database/Repository"
 	"Movie_Database/entities"
 	"github.com/google/uuid"
 	"net/http"
 )
 
-type Service struct {
-	Repo Repository.Repo
+type Repository interface {
+	AddMovie(m entities.Movie) error
+	GetMovieById(id string) (entities.Movie, error)
+	DeleteMovieById(id string) error
+	UpdateMovieById(id string, mv entities.Movie) error
 }
 
-func DoService(r Repository.Repo) Service {
-	return Service{
+type Serv struct {
+	Repo Repository
+}
+
+func DoService(r Repository) Serv {
+	return Serv{
 		Repo: r,
 	}
 }
 
-func (s Service) AddMovie(m entities.Movie) error {
+func (s *Serv) AddMovie(m entities.Movie) error {
 	m.Id = uuid.New().String()
 
 	err := s.Repo.AddMovie(m)
@@ -27,7 +35,7 @@ func (s Service) AddMovie(m entities.Movie) error {
 	return nil
 }
 
-func (s Service) GetMovieById(id string) (entities.Movie, error) {
+func (s *Serv) GetMovieById(id string) (entities.Movie, error) {
 	movie, err := s.Repo.GetMovieById(id)
 	if err != nil {
 		return movie, err
@@ -35,7 +43,7 @@ func (s Service) GetMovieById(id string) (entities.Movie, error) {
 	return movie, nil
 }
 
-func (s Service) DeleteMovieById(id string) error {
+func (s *Serv) DeleteMovieById(id string) error {
 
 	err := s.Repo.DeleteMovieById(id)
 	if err != nil {
@@ -44,11 +52,11 @@ func (s Service) DeleteMovieById(id string) error {
 	return nil
 }
 
-func (s Service) UpdateMovieById(id string, mv entities.Movie) error {
+func (s *Serv) UpdateMovieById(id string, mv entities.Movie) error {
 	if id != mv.Id {
 		return http.ErrMissingFile
 	}
-	err := s.Repo.UpdateMovieDb(id, mv)
+	err := s.Repo.UpdateMovieById(id, mv)
 	if err != nil {
 		return err
 	}

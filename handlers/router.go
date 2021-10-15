@@ -4,6 +4,13 @@ import (
 	"github.com/gorilla/mux"
 )
 
+//type MovieHandler interface {
+//	PostNewMovie(w http.ResponseWriter, r *http.Request)
+//	GetById(w http.ResponseWriter, r *http.Request)
+//	DeleteMovieById(w http.ResponseWriter, r *http.Request)
+//	UpdateMovie(w http.ResponseWriter, r *http.Request)
+//}
+
 func NewServer(handler MovieHandler) *mux.Router {
 	r := mux.NewRouter()
 

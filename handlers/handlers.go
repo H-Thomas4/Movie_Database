@@ -2,18 +2,24 @@ package handlers
 
 import (
 	"Movie_Database/entities"
-	"Movie_Database/service"
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
 	"net/http"
 )
 
-type MovieHandler struct {
-	Serv service.Service
+type Service interface {
+	AddMovie(m entities.Movie) error
+	GetMovieById(id string) (entities.Movie, error)
+	DeleteMovieById(id string) error
+	UpdateMovieById(id string, mv entities.Movie) error
 }
 
-func NewMovieHandler(s service.Service) MovieHandler {
+type MovieHandler struct {
+	Serv Service
+}
+
+func NewMovieHandler(s Service) MovieHandler {
 	return MovieHandler{
 		Serv: s,
 	}
@@ -57,6 +63,7 @@ func (mov MovieHandler) DeleteMovieById(w http.ResponseWriter, r *http.Request) 
 	id := vars["Id"]
 
 	err := mov.Serv.DeleteMovieById(id)
+
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusNotFound)
 	}

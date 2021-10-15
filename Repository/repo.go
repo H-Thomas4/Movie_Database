@@ -22,6 +22,13 @@ func NewRepo(f string) Repo {
 	}
 }
 
+//type Repository interface {
+//	AddMovie(m entities.Movie) error
+//	GetMovieById(id string)(entities.Movie, error)
+//	DeleteMovieById(id string)error
+//	UpdateMovieById(id string, mv entities.Movie) error
+//}
+
 func (r Repo) AddMovie(m entities.Movie) error {
 	db := MvDb{}
 
@@ -102,7 +109,7 @@ func (r Repo) DeleteMovieById(id string) error {
 
 }
 
-func (r Repo) UpdateMovieDb(id string, mv entities.Movie) error {
+func (r Repo) UpdateMovieById(id string, mv entities.Movie) error {
 
 	file, err := ioutil.ReadFile(r.Filename) // reads moviedb.json file
 	if err != nil {
